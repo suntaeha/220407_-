@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    height: 2000px;
+}
+
+section{
+    height: 800px;
+    background: url(https://www.starbucks.co.kr/common/img/main/fav_prod_bg_new.jpg) fixed; /* fixed : 스크롤은 움직이는데 사진은 고정 */
+}
+
+.photo{
+    position: absolute;
+    top: 100px;
+    right: 200px;
+}
+
+h1{
+    font-size: 6em;
+    width: 258px;
+    color: white;
+    font-family: sans-serif; /* font-family : 글씨체*/
+    position: absolute;
+    top: 80px;
+    left: 300px;
+    animation: slide 1s ease-out;
+}
+
+@keyframes slide {
+    from{
+        left: -100px;
+        opacity: 0;
+    }
+    to{
+        left: 300px;
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    from{
+        left: 300px;
+        opacity: 1;
+    }
+    to{
+        left: -100px;
+        opacity: 0;
+    }
+}
